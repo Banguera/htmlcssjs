@@ -2,3 +2,9 @@ html
 {
 	background-color: #FFF; 
 }
+.titulo
+{
+	text-align: center;
+	font-size: xx-large;
+	background-color: grey;
+}
