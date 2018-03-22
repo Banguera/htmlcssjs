@@ -70,21 +70,22 @@ var pokemon = {
 //OJOOO
 //ESTAS 3 LINEAS DE CODIGO MUESTRAN EL PRIMER OBJETO DEL JSON
 /*for(var key in pokemon.results) {
-	for (var i in pokemon.results[0]){
+	for (var i in pokemon.results[key]){
 		
-		document.write("<br>"+i+" -- "+pokemon.results[0][i]);
+		document.write("<br>"+i+" -- "+pokemon.results[key][i]);
+		}}
 		*/
 	
 //OJOOOOO
 //esta linea de codigo es buena, imprime pero solo la primera linea 20 veces
-//for(var key in pokemon.results) {
-	tableHead = '<tr>'+
+/*for(var key in pokemon.results) {
+	/*tableHead = '<tr>'+
              '<td>Url</td>'+
              '<td>Nombre</td>'+
-             '</tr>';
+             '</tr>';*/
 	for (var i = 0; i<pokemon.results.length; i++){
-		document.write("<br>"+i+" -- "+pokemon.results[i].url);
-		document.write("<br>"+i+" -- "+pokemon.results[i].name);
+		document.write("<br>Url-- "+pokemon.results[i].url);
+		document.write("<br>Name -- "+pokemon.results[i].name);
 
 		console.log(pokemon.results[i]);	
 		

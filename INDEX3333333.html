@@ -6,8 +6,19 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $.getJSON("http://pokeapi.co/api/v2/pokemon/",function(result){
-      $.each(result, function(i, field){
+    $.getJSON("https://pokeapi.co/api/v2/pokemon/",function(data){
+    	console.log(data);
+      $.each(data.results, function(i, field){
+     
+		for (var i = 0; i<data.results.length; i++){
+		document.write("<br>Url-- "+data.results[i].url);
+		document.write("<br>Name -- "+data.results[i].name);
+
+		console.log(data.results[i]);	
+		
+		
+	}
+      	console.log(field);
         $("div").append(field + " ");
       });
     });
